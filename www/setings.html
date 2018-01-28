@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin or Member</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400%7CZilla+Slab+Highlight" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/wc-styles.css" rel="stylesheet">
+  <!--<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">-->
+</head>
+
+<body>
+  <div class="container">
+    <img src="images/logo.png" alt="world cup 2018">
+    <nav role="navigation">
+      <label for="show-menu" id="show-menu-label"></label>
+      <input type="checkbox" id="show-menu" role="button" />
+
+      <ul class="topnav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">World Cup</a></li>
+        <li><a href="#">Polls</a></li>
+        <li><a href="#" class="active">Settings</a></li>
+        <li><a href="#">Log out</a></li>
+      </ul>
+
+    </nav>
+  </div>
+
+  <main>
+    <h1>Settings</h1>
+
+    <form action="#" id="settingsForm">
+      <fieldset>
+        <legend>Personal information:</legend>
+
+        <div>
+          <label for="userName">user name:</label>
+          <input type="text" id="userName">
+        </div>
+
+        <div>
+          <label for="email">email:</label>
+          <input id="email" type="text">
+        </div>
+
+        <div>
+          <label for="password">password:</label>
+          <a href="#">change</a>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Group information:</legend>
+
+        <div>
+          <label for="userName">user name:</label>
+          <input type="text" id="userName">
+        </div>
+
+        <div>
+          <label for="email">email:</label>
+          <input id="email" type="text">
+        </div>
+
+        <div>
+          <label for="password">password:</label>
+          <input id="password" type="password">
+        </div>
+      </fieldset>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>user name</th>
+          <th>email</th>
+          <th>accept/deny</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>user</td>
+          <td>useremail@email.com</td>
+          <td>
+            <a href="#"><img src="#" alt="accept"></a>
+            <a href="#"><img src="#" alt="deny"></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+</body>
+</html>

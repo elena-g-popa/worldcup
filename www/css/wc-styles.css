@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400%7CZilla+Slab+Highlight");
+html {
+  font-family: "Rubik", "Trebuchet MS", "Open sans", Helvetica, sans-serif;
+  font-size: 18px; }
+
+.hpBg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/homepage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+
+.hpBox {
+  width: 70vw;
+  margin: 40vw auto 0;
+  padding: 2.5rem 1rem;
+  border: 1px solid #e4c181;
+  background-color: #bc180e; }
+  @media (min-width: 560px) {
+    .hpBox {
+      width: 60%; } }
+  @media (min-width: 768px) {
+    .hpBox {
+      width: 50%; } }
+  @media (min-width: 1020px) {
+    .hpBox {
+      margin: 25vw auto 0;
+      width: 40%; } }
+  @media (min-width: 1400px) {
+    .hpBox {
+      width: 30%;
+      margin: 20vw auto 0; } }
+  .hpBox h1 {
+    font-size: 2rem;
+    color: #e4c181;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .hpBox h1 {
+        font-size: 2.5rem; } }
+  .hpBox h2 {
+    font-size: 1.2rem;
+    color: #fff9f7;
+    font-weight: 100;
+    text-align: center; }
+  .hpBox #logIn, .hpBox #admin, .hpBox #member {
+    width: 70%;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      .hpBox #logIn, .hpBox #admin, .hpBox #member {
+        font-size: 1.2rem; } }
+    .hpBox #logIn input, .hpBox #admin input, .hpBox #member input {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.5rem 0;
+      box-sizing: border-box;
+      background-color: #bc180e;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid #f7e6cc;
+      color: #e4c181; }
+      @media (min-width: 768px) {
+        .hpBox #logIn input, .hpBox #admin input, .hpBox #member input {
+          font-size: 0.9rem;
+          font-weight: 100; } }
+    .hpBox #logIn input::placeholder, .hpBox #admin input::placeholder, .hpBox #member input::placeholder {
+      color: #f7e6cc; }
+    .hpBox #logIn input:focus, .hpBox #admin input:focus, .hpBox #member input:focus {
+      outline: none;
+      border-bottom: 1px solid #e4c181; }
+    .hpBox #logIn input:focus::placeholder, .hpBox #admin input:focus::placeholder, .hpBox #member input:focus::placeholder {
+      color: #e4c181;
+      padding: 0; }
+    .hpBox #logIn .btn, .hpBox #admin .btn, .hpBox #member .btn {
+      width: 100%;
+      background: #e4c181;
+      margin: 2rem auto 0.5rem;
+      font-size: 1.2rem;
+      color: #fff9f7;
+      font-weight: 100;
+      line-height: 2rem;
+      border: 0; }
+      @media (min-width: 768px) {
+        .hpBox #logIn .btn, .hpBox #admin .btn, .hpBox #member .btn {
+          font-size: 1.4rem; } }
+    .hpBox #logIn .btn:hover, .hpBox #admin .btn:hover, .hpBox #member .btn:hover {
+      background-color: #ac130e;
+      color: #e4c181;
+      cursor: pointer; }
+  .hpBox p {
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 100;
+    color: #fff9f7;
+    text-align: center;
+    padding: 0.5rem 0; }
+    @media (min-width: 768px) {
+      .hpBox p {
+        font-size: 0.9rem; } }
+  .hpBox a:link, .hpBox a:visited {
+    color: #fff9f7; }
+  .hpBox a:hover, .hpBox a:active {
+    color: #e4c181; }
+
+.container {
+  background-color: #e4c181;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 0px #5c5c5c; }
+
+img {
+  float: right;
+  padding: 0.7rem; }
+  @media (min-width: 768px) {
+    img {
+      float: left; } }
+
+nav {
+  clear: both; }
+  @media (min-width: 768px) {
+    nav {
+      clear: none;
+      float: right; } }
+
+ul.topnav {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e4c181; }
+  @media (min-width: 768px) {
+    ul.topnav {
+      display: block;
+      margin-top: 1rem; } }
+
+ul.topnav li {
+  display: block;
+  padding: 0.5rem; }
+  @media (min-width: 768px) {
+    ul.topnav li {
+      display: inline-block; } }
+
+ul.topnav li a {
+  display: block;
+  color: #fff9f7;
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none; }
+
+ul.topnav li a:hover:not(.active) {
+  color: #bc180e;
+  text-decoration: underline; }
+
+ul.topnav li a.active {
+  color: #bc180e;
+  text-decoration: underline; }
+
+#show-menu {
+  position: absolute;
+  top: 25px;
+  display: block; }
+  @media (min-width: 768px) {
+    #show-menu {
+      display: none; } }
+
+@media (min-width: 768px) {
+  #show-menu-label {
+    display: none; } }
+
+#show-menu::after {
+  position: absolute;
+  left: 0;
+  top: -25px;
+  content: "☰";
+  display: block;
+  background-color: #e4c181;
+  color: #fff9f7;
+  font-size: 2rem;
+  padding: 0.3rem 0.5rem; }
+
+#show-menu:checked + ul {
+  display: block; }
+
+main {
+  width: 90vw;
+  margin: 0 auto; }
+
+h1 {
+  padding: 2rem 1rem 1rem;
+  font-size: 1.2rem;
+  color: #e4c181;
+  font-weight: 100; }
+
+#settingsForm {
+  color: #5c5c5c; }
+  #settingsForm fieldset {
+    padding-bottom: 2rem; }
+
+/*# sourceMappingURL=wc-styles.css.map */

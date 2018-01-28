@@ -1,0 +1,19 @@
+main{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+h1{
+  padding: 2rem 1rem 1rem;
+  font-size: 1.2rem;
+  color: $darkGold;
+  font-weight: 100;
+}
+
+#settingsForm{
+  color: $darkGrey;
+
+  fieldset{
+    padding-bottom: 2rem;
+  }
+}
