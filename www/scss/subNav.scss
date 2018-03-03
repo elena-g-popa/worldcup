@@ -1,0 +1,27 @@
+.subNav{
+  float: none;
+  padding: 3rem 0 0;
+
+  ul{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid $darkGold;
+  }
+
+  ul li{
+    display: inline;
+    padding: 0 0.4rem 0 0.3rem;
+
+    a:link, a:visited{
+      text-decoration: none;
+      color: $darkGold;
+      font-weight: 100;
+      display: inline-block;
+    }
+
+    .active, a:hover, a:active{
+      border-bottom: 3px solid $red;
+      padding-bottom: 1px;
+    }
+  }
+}

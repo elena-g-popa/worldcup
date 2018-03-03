@@ -1,0 +1,110 @@
+/*styling for the blog page*/
+.blog{
+	width: 100vw;
+	min-height: 80vh;
+
+	article{
+		position: relative;
+		padding: 2rem;
+		border-bottom: 1px solid $gold;
+
+		@include breakpoint(largeTablet){
+			padding: 5rem;
+		}
+
+		@include breakpoint(laptop){
+			padding: 7rem;
+		}
+
+		img{
+			display: none;
+			position: absolute;
+			left:0;
+			top:-50%;
+			z-index: -1;
+			width: 100vw;
+		}
+
+		h1{
+			padding-bottom: 1rem;
+			color: $darkGold;
+			font-size: 1.4rem;
+			text-transform: uppercase;
+
+			@include breakpoint(largeTablet){
+				font-size: 1.6rem;
+			}
+
+			@include breakpoint(laptop){
+				font-size: 2rem;
+			}
+		}
+
+		h2{
+			color: $darkRed;
+		}
+
+		.blogDesc{
+			display: none;
+			padding-top: 1.5rem;
+			font-style: italic;
+			text-indent: 2rem;
+			line-height: 1.4rem;
+			font-weight: 100;
+			color: $darkGold;
+			p{
+				float: right;
+				padding: 1rem 0;
+				font-weight: 400;
+
+			}
+		}//end .blogDesc
+	}//end article
+
+	article:hover{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		//text-shadow: 1px 1px $gold;
+
+		img{
+			display:block;
+		}
+
+		h1{color: $gold}
+
+		h2{color: $darkGold}
+
+		.blogDesc{
+			color: $gold;
+			display: block;
+			padding-bottom: 2rem;
+		}
+
+	}//end article:hover
+
+	article:first-of-type:hover{
+		//background-image: url('../images/ball.jpg');
+	}
+
+	article:nth-of-type(2):hover{
+		//background-image: url('../images/flag.jpeg');
+	}
+
+	article:nth-of-type(3):hover{
+		background-image: url('../images/cramps.jpeg');
+	}
+
+	article:nth-of-type(4):hover{
+		background-image: url('../images/fusball.jpg');
+	}
+
+	article:nth-of-type(5):hover{
+		background-image: url('../images/crowd.jpg');
+	}
+
+	article:nth-of-type(6):hover{
+		background-image: url('../images/green.jpeg');
+	}
+}//end blog
+/*end styling for the blog page*/

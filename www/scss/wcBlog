@@ -1,0 +1,77 @@
+.blog{
+	min-height: 80vh;
+
+	article{
+		padding: 7rem;
+		border-bottom: 1px solid $limeStone;
+
+		h1{
+			padding-bottom: 1rem;
+			color: $charcoleDark;
+			font-size: 2rem;
+			text-transform: uppercase;
+		}
+
+		h2{
+			color: $charcole;
+		}
+
+		.blogDesc{
+			display: none;
+			padding-top: 1.5rem;
+			font-style: italic;
+			text-indent: 2rem;
+			line-height: 1.4rem;
+			font-weight: 100;
+			color: $roseGoldDark;
+			p{
+				float: right;
+				padding-top: 1rem;
+				font-weight: 400;
+
+			}
+		}//end .blogDesc
+	}//end article
+
+	article:hover{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-shadow: 1px 1px $charcoleDark;
+
+		h1{color: $roseGold}
+
+		h2{color: $roseGoldDark}
+
+		.blogDesc{
+			color: $limeStone;
+			display: block;
+		}
+
+	}//end article:hover
+
+	article:first-of-type:hover{
+		background-image: url('../images/blog/kitchen.jpg');
+	}
+
+	article:nth-of-type(2):hover{
+		background-image: url('../images/blog/dessert.jpg');
+	}
+
+	article:nth-of-type(3):hover{
+		background-image: url('../images/blog/garden.jpg');
+	}
+
+	article:nth-of-type(4):hover{
+		background-image: url('../images/blog/baked.jpg');
+	}
+
+	article:nth-of-type(5):hover{
+		background-image: url('../images/blog/pepper.jpg');
+	}
+
+	article:nth-of-type(6):hover{
+		background-image: url('../images/blog/wood.jpg');
+	}
+}//end blog
+/*end styling for the blog page*/

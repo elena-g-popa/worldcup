@@ -1,0 +1,31 @@
+footer{
+  height: 20vw;
+  min-height: 223px;
+  background-image: url('../images/footer.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+}
+
+.socialMedia{
+  h2{
+    padding: 1rem 0.3rem;
+    font-size: 1rem;
+    color: $gold;
+    font-weight: bold;
+  }
+
+  a:link, a:visited{
+    display: block;
+    padding: 0.2rem 0.5rem;
+    color: $beige;
+    text-decoration: none;
+    font-weight: 100;
+
+    @include breakpoint(largeTablet){
+      display: inline;
+    }
+
+  }
+}

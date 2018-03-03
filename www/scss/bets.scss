@@ -1,0 +1,35 @@
+.flexContainer{
+  @include breakpoint(smallTablet){
+  display: flex;
+  flex-direction: row;
+}
+  .flexItem{
+    width: 100%;
+    background-color: #313131;
+
+    .accordion {
+    background-color: $darkRed;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 3rem;
+    transition: 0.4s;
+    }
+
+    .active, .accordion:hover {
+    background-color: #ccc;
+    }
+
+    .groups {
+      padding: 0 18px;
+      background-color: #313131;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  }
+}
