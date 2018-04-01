@@ -447,8 +447,10 @@ footer {
       display: none;
       position: absolute;
       left: 0;
-      top: -30%;
+      top: 0%;
       z-index: -1;
+      object-fit: cover;
+      object-position: 50% 50%;
       width: 100vw; }
     .blog article h1 {
       padding-bottom: 1rem;
@@ -480,7 +482,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center; }
     .blog article:hover img {
-      display: block; }
+      display: initial; }
     .blog article:hover h1 {
       color: #f7e6cc; }
     .blog article:hover h2 {

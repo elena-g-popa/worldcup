@@ -20,8 +20,10 @@
 			display: none;
 			position: absolute;
 			left:0;
-			top:-30%;
+			top:0%;
 			z-index: -1;
+			object-fit: cover;
+			object-position: 50% 50%;
 			width: 100vw;
 		}
 
@@ -68,7 +70,7 @@
 		//text-shadow: 1px 1px $gold;
 
 		img{
-			display:block;
+			display:initial;
 		}
 
 		h1{color: $gold}
